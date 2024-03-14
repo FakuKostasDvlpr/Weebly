@@ -421,9 +421,10 @@ export function GlobeDemo() {
             </p>
           </div>
         </motion.div>
-        <div className="w-full items-center justify-center mx-auto h-full md:w-[500px] md:h-[540px]">
+        <div className="w-full h-[43rem] md:h-[60rem] flex justify-center items-center">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
+
       </div>
     </div>
   );
