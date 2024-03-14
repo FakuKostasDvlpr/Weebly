@@ -2,6 +2,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
+import { SpotlightPreview } from "./Portada-extra";
+import { Spotlight } from "../ui/spotlight";
 
 const World = dynamic(() => import("../ui/globe").then((m) => m.World), {
   ssr: false,
@@ -395,7 +397,12 @@ export function GlobeDemo() {
   ];
 
   return (
+    <>
     <div className="">
+    <Spotlight
+        className="w-full top-40 left-0 md:left-60 md:-top-20"
+        fill="#e4c823"
+      />
       <div className="">
         <motion.div
           initial={{
@@ -411,21 +418,32 @@ export function GlobeDemo() {
           }}
           className="div"
         >
-          <div className="mt-20">
-            <h2 className="text-center text-3xl md:text-4xl font-bold text-black dark:text-white">
-              We sell soap worldwide
-            </h2>
-            <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
-              This globe is interactive and customizable. Have fun with it, and
-              don&apos;t forget to share it. :)
-            </p>
+          <div className=" flex flex-col text-center">
+            <h1 className="mt-20 text-white font-medium text-4xl md:text-5xl lg:text-6xl">
+              LA <span className="bg-clip-text font-bold text-transparent bg-gradient-to-r from-purple-400 to-blue-500 via-purple-600">HABILIDAD CON MAYOR DEMANDA</span> DEL <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500 via-purple-600">MOMENTO</span>
+            </h1>
+            
           </div>
         </motion.div>
-        <div className="w-full h-[43rem] md:h-[60rem] flex justify-center items-center">
+        <div className="w-full h-[43rem] md:h-[55rem] flex justify-center items-center">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
-
       </div>
     </div>
+    {/*  */}
+    <div className="flex flex-col text-4xl items-center justify-center text-center text-white m-10">
+    <p className="text-2xl">Ya estás <span className="text-pink-300 font-medium text-3xl">cansado </span>de probar múltiples modelos de negocios y no tener resultados contundentes. 
+    </p>
+      <br /> 
+      <hr className="w-48 h-1 mx-auto bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+        <p>
+        ¿Eres un independiente en busca de crecimiento y una oportunidad de vehículo?
+        <span className="text-3xl bg-gradient-to-r font-bold from-white via-purple-500 to-pink-500 bg-clip-text text-transparent">
+              +3kmes
+            </span>
+        </p> 
+    </div>
+    </>
+
   );
 }

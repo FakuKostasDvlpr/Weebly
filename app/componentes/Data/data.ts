@@ -15,12 +15,11 @@ export const pageData: PageData = {
     subtitle: "¡Bienvenido a mi portafolio!",
     agenda: [
         "Ya estás cansado de probar múltiples modelos de negocios y no tener resultados contundentes",
-        "Sos un independiente en busca de crecimiento y un vehículo oportunidad de +3kmes",
-        "Si sos dueño de negocios, infoproductor.",
-        "O simplemente querés mejorar tus habilidades de ventas"
+        " sos un independiente en busca de crecimiento y un vehículo oportunidad de +3kmes",
+        " Si sos dueño de negocios, infoproductor.",
+        " O simplemente querés mejorar tus habilidades de ventas"
     ],
-    comparison: "En comparación al trabajo que tenía antes, me lleva mucho menos tiempo y el ingreso es 4 veces más.",
-    // Puedes agregar más propiedades según sea necesario para la página
+    comparison: " En comparación al trabajo que tenía antes, me lleva mucho menos tiempo y el ingreso es 4 veces más.",
 };
 
 // Exporta los datos de la página para que puedan ser utilizados en otros archivos

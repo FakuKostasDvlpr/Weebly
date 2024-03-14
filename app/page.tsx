@@ -1,4 +1,5 @@
 import { GlobeDemo } from "./componentes/Hero/Portada";
+import { SpotlightPreview } from "./componentes/Hero/Portada-extra";
 
 
 export default function Home() {
