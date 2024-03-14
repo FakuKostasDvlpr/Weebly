@@ -10,8 +10,8 @@ export const TimeLine = () => {
                     <Play />
                 </div>
             </div>
-            <div className="flex flex-col text-white">
-                <h1 className="text-4xl">Paso 1: Ver el video</h1>
+            <div className="flex flex-col text-white mt-10">
+                <h1 className="text-4xl text-gray-900">Paso 1: Ver el video</h1>
             </div>
         </section>
         </>

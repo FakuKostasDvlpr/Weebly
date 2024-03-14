@@ -441,7 +441,10 @@ export function GlobeDemo() {
         </p> 
         <span className="sm:text-7xl text-5xl bg-gradient-to-r font-bold from-gray-600 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               +3kmes
-            </span>
+        </span>
+        <Link href={"/presentacion"}>
+            Clickea
+        </Link>
     </div>
     </>
 

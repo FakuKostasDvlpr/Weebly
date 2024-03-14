@@ -1,8 +1,7 @@
 "use client";
-import { TypewriterEffectSmooth } from "../componentes/ui/typewriter-effect";
-import data from "../componentes/Data/data"
+import { TypewriterEffectSmooth } from "@/app/componentes/ui/typewriter-effect";
 
-export function Presentacion() {
+export default function Presentacion() {
     const words = [
         {
             text: "Facturar",
