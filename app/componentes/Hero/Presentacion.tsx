@@ -1,6 +1,7 @@
-"use client";
+import { TimeLine } from "../ui/Timeline";
 import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
-import Link from "next/link";
+import { AgendaRules } from "./Agenda-Reglas";
+import { PlayVideo } from "./Video";
 
 export function Presentacion() {
     const words = [
@@ -34,17 +35,23 @@ export function Presentacion() {
             className: "dark:text-pink-500",
         },
     ];
+
     return (
-    <div className="flex flex-col items-center justify-center h-[40rem]  ">
-        <p className="text-neutral-300 font-medium text-4xl ">
-            CÓMO FACTURAR ENTRE
-        </p>
-            <TypewriterEffectSmooth words={words} />
-        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
-            <Link className="items-center text-center justify-center w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm" href={"/"}>
-                <p>Join now</p>
-            </Link>
+        <>
+        <div className="flex flex-col items-center justify-center h-screen">
+            <div className="flex items-center text-center justify-center flex-col">
+                <p className="text-neutral-300 font-medium text-4xl">
+                    CÓMO FACTURAR ENTRE
+                </p>
+                <TypewriterEffectSmooth words={words} />
+                <TimeLine/>
+            <PlayVideo />
+            </div>
         </div>
-    </div>
+        <div className="flex flex-col items-center">
+            <AgendaRules/>
+        </div>
+        </>
+
     );
 }

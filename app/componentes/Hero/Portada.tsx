@@ -398,12 +398,12 @@ export function GlobeDemo() {
 
   return (
     <>
-    <div className="flex flex-col">
+    <div className="flex flex-col h-full">
     <Spotlight
         className="w-full top-40 left-0 md:left-60 md:-top-20"
         fill="#e4c823"
       />
-      <div className="">
+      <div className="flex flex-col gap-10">
         <motion.div
           initial={{
             opacity: 0,
@@ -434,14 +434,14 @@ export function GlobeDemo() {
     <div className="gap-5 flex flex-col text-4xl items-center justify-center text-center text-white m-10">
     <p className="text-2xl">Ya estás <span className="text-pink-300 font-medium text-3xl">cansado </span>de probar múltiples modelos de negocios y no tener resultados contundentes. 
     </p>
-      <br /> 
       <hr className="w-48 h-1 mx-auto bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
         <p>
         ¿Eres un independiente en busca de crecimiento y una oportunidad de vehículo?
-        <span className="text-3xl bg-gradient-to-r font-bold from-white via-purple-500 to-pink-500 bg-clip-text text-transparent">
+        
+        </p> 
+        <span className="text-5xl bg-gradient-to-r font-bold from-white via-purple-500 to-pink-500 bg-clip-text text-transparent">
               +3kmes
             </span>
-        </p> 
     </div>
     </>
 
