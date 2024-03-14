@@ -2,8 +2,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
-import { SpotlightPreview } from "./Portada-extra";
 import { Spotlight } from "../ui/spotlight";
+import Link from "next/link";
 
 const World = dynamic(() => import("../ui/globe").then((m) => m.World), {
   ssr: false,
@@ -398,7 +398,7 @@ export function GlobeDemo() {
 
   return (
     <>
-    <div className="">
+    <div className="flex flex-col">
     <Spotlight
         className="w-full top-40 left-0 md:left-60 md:-top-20"
         fill="#e4c823"
@@ -420,7 +420,7 @@ export function GlobeDemo() {
         >
           <div className=" flex flex-col text-center">
             <h1 className="mt-20 text-white font-medium text-4xl md:text-5xl lg:text-6xl">
-              LA <span className="bg-clip-text font-bold text-transparent bg-gradient-to-r from-purple-400 to-blue-500 via-purple-600">HABILIDAD CON MAYOR DEMANDA</span> DEL <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500 via-purple-600">MOMENTO</span>
+              LA <span className="bg-clip-text font-bold text-transparent bg-gradient-to-r from-purple-300 to-blue-500 via-pink-400">HABILIDAD CON MAYOR DEMANDA</span> DEL <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500 via-pink-500">MOMENTO</span>
             </h1>
             
           </div>
@@ -431,7 +431,7 @@ export function GlobeDemo() {
       </div>
     </div>
     {/*  */}
-    <div className="flex flex-col text-4xl items-center justify-center text-center text-white m-10">
+    <div className="gap-5 flex flex-col text-4xl items-center justify-center text-center text-white m-10">
     <p className="text-2xl">Ya estás <span className="text-pink-300 font-medium text-3xl">cansado </span>de probar múltiples modelos de negocios y no tener resultados contundentes. 
     </p>
       <br /> 
