@@ -40,7 +40,7 @@ export function Presentacion() {
         <>
         <div className="flex flex-col items-center justify-center h-screen">
             <div className="flex items-center text-center justify-center flex-col">
-                <p className="text-neutral-300 font-medium text-2xl md:text-4xl">
+                <p className="text-gray-900 mb-10 font-bold tracking-widest text-3xl md:text-5xl">
                     CÓMO FACTURAR ENTRE
                 </p>
                 <TypewriterEffectSmooth words={words} />

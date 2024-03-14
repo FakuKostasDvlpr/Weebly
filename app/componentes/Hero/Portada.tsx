@@ -419,19 +419,19 @@ export function GlobeDemo() {
           className="div"
         >
           <div className=" flex flex-col text-center">
-            <h1 className="mt-20 text-white font-medium text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="mt-20 text-gray-800 font-medium text-4xl md:text-5xl lg:text-6xl">
               LA <span className="bg-clip-text font-bold text-transparent bg-gradient-to-r from-purple-300 to-blue-500 via-pink-400">HABILIDAD CON MAYOR DEMANDA</span> DEL <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500 via-pink-500">MOMENTO</span>
             </h1>
             
           </div>
         </motion.div>
-        <div className="w-full h-[23rem] md:h-[55rem] flex justify-center items-center">
+        <div className=" cursor-pointer w-full h-[23rem] md:h-[55rem] flex justify-center items-center">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>
     </div>
     {/*  */}
-    <div className="gap-5 flex flex-col text-4xl items-center justify-center text-center text-white m-10">
+    <div className="gap-5 flex flex-col text-4xl items-center justify-center text-center text-gray-800 m-10">
     <p className="text-2xl">Ya estás <span className="text-pink-300 font-medium text-3xl">cansado </span>de probar múltiples modelos de negocios y no tener resultados contundentes. 
     </p>
       <hr className="w-48 h-1 mx-auto bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
@@ -439,7 +439,7 @@ export function GlobeDemo() {
         ¿Eres un independiente en busca de crecimiento y una oportunidad de vehículo?
         
         </p> 
-        <span className="text-5xl bg-gradient-to-r font-bold from-white via-purple-500 to-pink-500 bg-clip-text text-transparent">
+        <span className="sm:text-7xl text-5xl bg-gradient-to-r font-bold from-gray-600 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               +3kmes
             </span>
     </div>

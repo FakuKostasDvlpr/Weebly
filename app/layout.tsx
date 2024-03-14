@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Onest } from "next/font/google";
+import { Lumiflex } from "uvcanvas"
 import "./globals.css";
+
 
 const inter = Onest({ subsets: ["latin"] });
 
@@ -16,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        </body>
     </html>
   );
 }
+
+      
