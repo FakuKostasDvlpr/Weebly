@@ -38,11 +38,11 @@ export default function Presentacion() {
             <div className="flex  items-center font-semibold">
             <AgendaRules/>
             </div>
-            <div>
+            <div className="mb-10">
             <Link href={"/booking"} className="border-2 px-10 py-3 rounded-xl border-gray-800 bg-gray-600 text-white
                     hover:border-dashed hover:border-purple-400 hover:bg-transparent font-bold hover:text-purple-700 duration-200
                     ">
-                    Ingresa Ahora Mismo 
+                    Agenda una llamada! 
             </Link>
             </div>
         </div>
