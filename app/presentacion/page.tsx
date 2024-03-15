@@ -29,7 +29,7 @@ export default function Presentacion() {
                 </p>
                 <TypewriterEffectSmooth words={words} />
                 <p className="text-gray-900 mb-10 font-bold tracking-wide text-4xl px-20 max-md:text-[20pt]">
-                    En <span className="font-bold text-3xl text-pink-500">Latinoamerica</span>
+                    <span className="font-bold text-3xl text-pink-500">En Latinoamerica</span>
                 </p>
                 <TimeLine/>
                 <PlayVideo />
