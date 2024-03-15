@@ -1,28 +1,15 @@
-import { Navigation, Autoplay } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import React from "react";
-
 export default function CardResult() {
   return (
-    <Swiper
-    modules={[Navigation, Autoplay]}
-    spaceBetween={0}
-    slidesPerView={1}
-    effect={''}
-    className='hover:cursor-grab active:cursor-grabbing w-full max-w-[500px] h-[800px] flex justify-center items-center text-center mt-20'
-    direction={'horizontal'}
-    autoplay={{
-        delay: 5000,
-        disableOnInteraction: false,
-    }}
-    navigation
->
-        <SwiperSlide id='materiales' className='flex flex-col items-center mx-auto justify-center w-full h-full text-white' >
-            <img src="https://salesclosercompany.com/wp-content/uploads/2023/12/photo_4927476779266976707_y-6533743.webp" alt="" />
-        </SwiperSlide>
-</Swiper>
+    <section className="flex flex-col xl:flex-col lg:flex-col sm:flex-col  md:flex-row  mt-10 gap-10">
+      <div className="embed-responsive">
+        <iframe className="w-[300px] sm:w-[600px] sm:h-[500px] md:w-[700px] md:h-[400px] xl:w-[800px] xl:h-[500px] lg:w-[900px] lg:h-[600px] rounded-xl" src="/video1.mp4" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      </div>
+
+      <div className="embed-responsive">
+        <iframe className="w-full sm:w-[600px] sm:h-[500px] md:w-[700px] md:h-[400px] xl:w-[800px] xl:h-[500px] lg:w-[900px] lg:h-[600px] rounded-xl" src="https://player.vimeo.com/video/871518630?h=0f02d0ef32" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      </div>
+    </section>
+
+
   );
 }

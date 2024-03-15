@@ -26,4 +26,5 @@ body {
 
 .vp-center, #player{
   height: fit-content !important;
+  overflow-x: hidden;
 }
