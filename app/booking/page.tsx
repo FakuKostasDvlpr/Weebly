@@ -1,4 +1,7 @@
 "use client";
+
+import Script from "next/script";
+
 export default function booking() {
     return (
         <div className=" m-10  flex gap-16 flex-col items-center justify-center mt-10">
@@ -21,7 +24,13 @@ export default function booking() {
                 </p>
             </div>
           </div>
-          
+          <div>
+          <div className="calendly-inline-widget w-[450px] md:w-[1300px] h-screen"
+                data-url="https://calendly.com/codeamosparavos-dev/entrevista-calificacion-programa-closer-remoto-15m?background_color=000000&text_color=FFFFFF&primary_color=94d75d"></div>
+                <Script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></Script>
+          </div>
         </div>
     );
 }
+
+
