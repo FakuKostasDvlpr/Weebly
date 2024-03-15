@@ -424,9 +424,9 @@ export function GlobeDemo() {
             <h1 className="mt-20 font-bold text-gray-800 text-4xl md:text-5xl lg:text-6xl">
               LA <span className="bg-clip-text font-bold text-transparent bg-gradient-to-r from-purple-300 to-blue-500 via-pink-400">HABILIDAD CON MAYOR DEMANDA</span> DEL <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500 via-pink-500">MOMENTO</span>
             </h1>
-            <div className="flex items-center text-2xl justify-center font-extrabold gap-5"> 
+            <div className="flex flex-col md:flex-row items-center text-2xl justify-center font-extrabold gap-3"> 
               <p>ENTRENAMIENTO DEFINITIVO </p>
-              <Code />
+              <Code/>
             </div>
           </div>
         </motion.div>
@@ -453,7 +453,7 @@ export function GlobeDemo() {
           </h2>
         </div>
         <div className="w-full flex-col items-center justify-center flex">
-          <h4 className="mt-20 font-bold">Resultados de nuestros alumnos</h4>
+          <h4 className="mt-20 font-bold text-3xl md:text-5xl">Resultados de nuestros alumnos</h4>
           <div>
             <CardResult/>
           </div>
