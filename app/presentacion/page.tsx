@@ -7,43 +7,30 @@ export default function Presentacion() {
     const words = [
         {
             text: "1-3k",
-            className: "dark:text-green-500",
+            className: "dark:text-green-500 text-3xl",
         },
         {
             text: "USD",
+            className: "dark:text-green-500 text-3xl",
         },
         {
-            text: "en",
-        },
-        {
-            text: "menos",
-        },
-        {
-            text: "de",
-        },
-        {
-            text: "3",
-        },
-        {
-            text: "meses",
-        },
-        {
-            text: "en",
-        },
-        {
-            text: "Latinoamérica.",
-            className: "dark:text-pink-500",
+            text: "en menos de 3 meses 🕛",
+            className: "text-3xl",
+
         },
     ];
 
     return (
         <>
-        <div className="flex flex-col w-full items-center justify-center mt-20">
+        <div className="flex flex-col w-full items-center justify-center mt-10">
             <div className="flex items-center text-center justify-center flex-col">
-                <p className="text-gray-900 mb-10 font-bold tracking-widest text-4xl px-20 max-md:text-[20pt]">
+                <p className="text-gray-900 mb-10 font-bold tracking-wide text-4xl px-20 max-md:text-[20pt]">
                     CÓMO FACTURAR ENTRE
                 </p>
                 <TypewriterEffectSmooth words={words} />
+                <p className="text-gray-900 mb-10 font-bold tracking-wide text-4xl px-20 max-md:text-[20pt]">
+                    En <span className="font-bold text-3xl text-pink-500">Latinoamerica</span>
+                </p>
                 <TimeLine/>
                 <PlayVideo />
             </div>
