@@ -27,9 +27,10 @@ export default function Presentacion() {
                 <p className="text-gray-900 mb-10 font-bold tracking-wide text-4xl px-20 max-md:text-[20pt]">
                     CÓMO FACTURAR ENTRE
                 </p>
-                <TypewriterEffectSmooth words={words} />
-                <p className="text-gray-900 mb-10 font-bold tracking-wide text-4xl px-20 max-md:text-[20pt]">
-                    <span className="font-bold text-3xl text-pink-500">En Latinoamerica</span>
+                <p className="text-green-600 mb-10 font-extrabold tracking-wide text-4xl px-20 max-md:text-[20pt]">
+                1,3UKSD <span className="text-4xl text-gray-700">3 meses</span>
+                <span className="text-4xl text-gray-700">en menos de  en</span>
+                <span className="font-bold text-3xl text-pink-500">  Latinoamerica</span>
                 </p>
                 <TimeLine/>
                 <PlayVideo />
