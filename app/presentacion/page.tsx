@@ -38,14 +38,14 @@ export default function Presentacion() {
 
     return (
         <>
-        <div className="flex flex-col w-full items-center justify-center h-screen mt-20">
+        <div className="flex flex-col w-full items-center justify-center mt-20">
             <div className="flex items-center text-center justify-center flex-col">
-                <p className="text-gray-900 mb-10 font-bold tracking-widest text-3xl md:text-4xl">
+                <p className="text-gray-900 mb-10 font-bold tracking-widest text-4xl px-20 max-md:text-[20pt]">
                     CÓMO FACTURAR ENTRE
                 </p>
                 <TypewriterEffectSmooth words={words} />
                 <TimeLine/>
-            <PlayVideo />
+                <PlayVideo />
             </div>
         </div>
         <div className="flex flex-col items-center">
