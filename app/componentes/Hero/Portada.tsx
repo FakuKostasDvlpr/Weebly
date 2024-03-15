@@ -431,7 +431,7 @@ export function GlobeDemo() {
           </div>
         </motion.div>
         <div className=" cursor-pointer w-full h-[23rem] md:h-[55rem] flex justify-center items-center">
-          <World data={sampleArcs} globeConfig={globeConfig} />
+         {/*  <World data={sampleArcs} globeConfig={globeConfig} /> */}
         </div>
       </div>
     </div>
