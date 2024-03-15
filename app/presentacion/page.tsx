@@ -47,9 +47,12 @@ export default function Presentacion() {
                 <TimeLine/>
             <PlayVideo />
             </div>
-        </div>
-        <div className="flex flex-col items-center">
-            <AgendaRules/>
+            <div className="flex flex-col items-center">
+                <AgendaRules/>
+            </div>
+            <div>
+                <p>RESULTADOS DE NUESTROS ALUMNOS</p>
+            </div>
         </div>
         </>
 
