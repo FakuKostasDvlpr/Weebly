@@ -25,7 +25,7 @@ export default function booking() {
             </div>
           </div>
           <div>
-          <div className="calendly-inline-widget w-[450px] md:w-[1300px] h-screen"
+          <div className="calendly-inline-widget w-[450px] md:w-[1190px] h-screen"
                 data-url="https://calendly.com/codeamosparavos-dev/entrevista-calificacion-programa-closer-remoto-15m?background_color=000000&text_color=FFFFFF&primary_color=94d75d"></div>
                 <Script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></Script>
           </div>
