@@ -24,7 +24,7 @@ export default function Presentacion() {
         <>
         <div className="flex flex-col w-full items-center justify-center mt-10">
             <div className="flex items-center text-center justify-center flex-col">
-                <p className="text-gray-900 mb-10 font-bold tracking-wide text-4xl px-20 max-md:text-[20pt]">
+                <p className="text-gray-900 mb-10 font-bold tracking-wide text-3xl px-20 max-md:text-[20pt]">
                     CÓMO FACTURAR ENTRE
                 </p>
                 <p className="text-green-600 mb-10 font-extrabold tracking-wide text-4xl px-20 max-md:text-[20pt]">
