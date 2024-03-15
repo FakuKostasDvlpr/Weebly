@@ -27,9 +27,9 @@ export default function Presentacion() {
                 <p className="text-gray-900 mb-10 font-bold tracking-wide text-3xl px-20 max-md:text-[20pt]">
                     CÓMO FACTURAR ENTRE
                 </p>
-                <p className="text-green-600 mb-10 font-extrabold tracking-wide text-4xl px-20 max-md:text-[20pt]">
-                1,3UKSD <span className="text-3xl text-gray-700">3 meses</span>
-                <span className="text-3xl text-gray-700">en menos de  en</span>
+                <p className="text-green-600 mb-10 font-extrabold tracking-wide text-5xl px-20 max-md:text-[20pt]">
+                1,3k USD <br /><span className="text-3xl text-gray-700">3 meses</span>
+                <span className="text-3xl text-gray-700"> en menos de  en</span>
                 <span className="font-bold text-3xl text-pink-500">  Latinoamerica</span>
                 </p>
                 <TimeLine/>
