@@ -3,9 +3,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { Spotlight } from "../ui/spotlight";
-import Link from "next/link";
 import Code from "../Icons/Code";
 import ButtonLog from "../Buttons/ButtonStyle";
+import  CardResult  from "../Buttons/CardResult";
 
 const World = dynamic(() => import("../ui/globe").then((m) => m.World), {
   ssr: false,
@@ -431,7 +431,7 @@ export function GlobeDemo() {
           </div>
         </motion.div>
         <div className=" cursor-pointer w-full h-[23rem] md:h-[55rem] flex justify-center items-center">
-         {/*  <World data={sampleArcs} globeConfig={globeConfig} /> */}
+        <World data={sampleArcs} globeConfig={globeConfig} /> 
         </div>
       </div>
     </div>
@@ -445,6 +445,19 @@ export function GlobeDemo() {
         <span className="sm:text-7xl mt-20 text-5xl bg-gradient-to-r font-bold from-gray-600 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               +3kmes
         </span>
+        <div className="flex mt-20">
+          <h2 className="text-3xl font-semibold">
+          Esta habilidad de alto valor es la más <span className="text-pink-700 font-bold">RENTABLE </span> 
+          Siempre que haya una transacción de dinero en una empresa, un closer está presente. <span className="text-pink-700 font-bold">NUNCA MÁS TE VA A FALTAR TRABAJO </span> , este vehículo oportunidad te permite facturar cifras enormes en comisiones al trabajar con servicios
+          <span className="text-pink-700 font-bold"> HIGH TICKET (+5kUSD) </span>  
+          </h2>
+        </div>
+        <div className="w-full flex-col items-center justify-center flex">
+          <h4 className="mt-20 font-bold">Resultados de nuestros alumnos</h4>
+          <div>
+            <CardResult/>
+          </div>
+        </div>
         <div className="flex mt-20">
         <ButtonLog/>
         </div>

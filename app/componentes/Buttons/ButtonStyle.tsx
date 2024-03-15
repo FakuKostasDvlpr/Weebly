@@ -4,8 +4,10 @@ import Link from "next/link";
 
 export default function ButtonLog() {
   return (
-    <Link href={"/presentacion"} className="bg-gradient-to-tr rounded-xl from-pink-500 to-gray-800 px-8 text-white shadow-lg">
-      Clickea 
+    <Link href={"/presentacion"} className="border-2 px-10 py-3 rounded-xl border-gray-800 bg-gray-600 text-white
+      hover:border-dashed hover:border-purple-400 hover:bg-transparent font-bold hover:text-purple-700 duration-200
+    ">
+      Ingresa Ahora Mismo 
     </Link>
   );
 }
