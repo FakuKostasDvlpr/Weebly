@@ -6,6 +6,7 @@ import { Spotlight } from "../ui/spotlight";
 import Code from "../Icons/Code";
 import ButtonLog from "../Buttons/ButtonStyle";
 import  CardResult  from "../Buttons/CardResult";
+import { RevealWrapper } from "next-reveal";
 
 const World = dynamic(() => import("../ui/globe").then((m) => m.World), {
   ssr: false,
@@ -403,7 +404,7 @@ export function GlobeDemo() {
     <div className="flex flex-col h-full">
     <Spotlight
         className="w-full top-40 left-0 md:left-60 md:-top-20"
-        fill="#e4c823"
+        fill="#f72585"
       />
       <div className="flex flex-col gap-10">
         <motion.div
@@ -421,46 +422,61 @@ export function GlobeDemo() {
           className="div"
         >
           <div className=" flex flex-col text-center p-10 gap-10">
+        <RevealWrapper delay={300} distance="50px" duration={1000} easing='cubic-bezier(0.5, 0, 0, 1)' origin="bottom" reset={true} >
             <h1 className="mt-20 font-bold text-gray-800 text-4xl md:text-5xl lg:text-6xl">
               LA <span className="bg-clip-text font-bold text-transparent bg-gradient-to-r from-purple-300 to-blue-500 via-pink-400">HABILIDAD CON MAYOR DEMANDA</span> DEL <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500 via-pink-500">MOMENTO</span>
             </h1>
+      </RevealWrapper>
+
             <div className="flex flex-col md:flex-row items-center text-2xl justify-center font-extrabold gap-3"> 
               <p>ENTRENAMIENTO DEFINITIVO </p>
               <Code/>
             </div>
           </div>
         </motion.div>
-        <div className=" cursor-pointer w-full h-[23rem] md:h-[55rem] flex justify-center items-center">
-        <World data={sampleArcs} globeConfig={globeConfig} /> 
-        </div>
+        <RevealWrapper delay={300} distance="50px" duration={1000} easing='cubic-bezier(0.5, 0, 0, 1)' origin="bottom" reset={true} >
+          <div className=" cursor-pointer w-full h-[23rem] md:h-[55rem] flex justify-center items-center">
+          <World data={sampleArcs} globeConfig={globeConfig} /> 
+          </div>
+      </RevealWrapper>
       </div>
     </div>
+    
     <div className="gap-5 flex flex-col text-4xl items-center justify-center text-center text-gray-800 m-10">
-    <p className="text-2xl">Ya estás <span className="text-pink-300 font-medium text-3xl">cansado </span>de probar múltiples modelos de negocios y no tener resultados contundentes. 
-    </p>
-      <hr className="w-48 h-1 mx-auto bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
-        <p className="text-2xl">
-        ¿Eres un independiente en busca de crecimiento y una oportunidad de vehículo?
-        </p> 
-        <span className="sm:text-7xl mt-20 text-5xl bg-gradient-to-r font-bold from-gray-600 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-              +3kmes
-        </span>
-        <div className="flex mt-20">
-          <h2 className="text-3xl font-semibold">
-          Esta habilidad de alto valor es la más <span className="text-pink-700 font-bold">RENTABLE </span> 
-          Siempre que haya una transacción de dinero en una empresa, un closer está presente. <span className="text-pink-700 font-bold">NUNCA MÁS TE VA A FALTAR TRABAJO </span> , este vehículo oportunidad te permite facturar cifras enormes en comisiones al trabajar con servicios
-          <span className="text-pink-700 font-bold"> HIGH TICKET (+5kUSD) </span>  
-          </h2>
-        </div>
-        <div className="w-full flex-col items-center justify-center flex">
-          <h4 className="mt-20 font-bold text-3xl md:text-5xl">Resultados de nuestros alumnos</h4>
-          <div>
-            <CardResult/>
+    <RevealWrapper delay={300} distance="50px" duration={1000} easing='cubic-bezier(0.5, 0, 0, 1)' origin="rigth" reset={true} >
+      <p className="text-2xl">Ya estás <span className="text-pink-300 font-medium text-3xl">cansado </span>de probar múltiples modelos de negocios y no tener resultados contundentes. 
+      </p>
+      </RevealWrapper>
+
+        <hr className="w-48 h-1 mx-auto bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+        <RevealWrapper delay={300} distance="50px" duration={1000} easing='cubic-bezier(0.5, 0, 0, 1)' origin="top" reset={true} >
+          <p className="text-2xl">
+          ¿Eres un independiente en busca de crecimiento y una oportunidad de vehículo?
+          </p> 
+          <span className="sm:text-7xl mt-20 text-5xl bg-gradient-to-r font-bold from-gray-600 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                +3kmes
+          </span>
+      </RevealWrapper>
+
+        <RevealWrapper delay={300} distance="50px" duration={1000} easing='cubic-bezier(0.5, 0, 0, 1)' origin="bottom" reset={true} >
+          <div className="flex mt-20">
+            <h2 className="text-3xl font-semibold">
+            Esta habilidad de alto valor es la más <span className="text-pink-700 font-bold">RENTABLE </span> 
+            Siempre que haya una transacción de dinero en una empresa, un closer está presente. <span className="text-pink-700 font-bold">NUNCA MÁS TE VA A FALTAR TRABAJO </span> , este vehículo oportunidad te permite facturar cifras enormes en comisiones al trabajar con servicios
+            <span className="text-pink-700 font-bold"> HIGH TICKET (+5kUSD) </span>  
+            </h2>
           </div>
-        </div>
-        <div className="flex mt-20">
-        <ButtonLog/>
-        </div>
+        </RevealWrapper>
+          <div className="w-full flex-col items-center justify-center flex">
+            <h4 className="mt-20 font-bold text-3xl md:text-5xl">Resultados de nuestros alumnos</h4>
+            <div>
+              <CardResult/>
+            </div>
+          </div>
+          <div className="flex mt-20">
+          <ButtonLog/>
+          </div>
+          
     </div>
     </>
 
